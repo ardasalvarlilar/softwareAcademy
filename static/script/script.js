@@ -1,20 +1,19 @@
-const links = document.querySelectorAll('.border-bottom') // .link sınıfını seçiyoruz
+// JavaScript ile p elementine erişmek
+let listItem = document.querySelectorAll('.list-unstyled li');
 
-for (let i of links) {
-    i.addEventListener('click', toggleLink)
-}
-
-function toggleLink() {
-    let willOpen = this.nextSibling
-    console.log(willOpen)
-
-    if (willOpen.classList.contains('hide')) {
-        willOpen.classList.remove('hide')
-        willOpen.classList.add('show')
-        // this.querySelector('.fa-plus').classList.toggle('turn')
-    } else {
-        willOpen.classList.remove('show')
-        willOpen.classList.add('hide')
-        // this.querySelector('.fa-plus').classList.toggle('turn')
-    }
-}
+listItem.forEach(function(item) {
+  let pElement = item.querySelector('p');
+  if (pElement) {
+    
+    item.addEventListener('click', function() {
+      if(pElement.classList.contains('hide')) {
+        pElement.classList.remove('hide')
+        pElement.classList.add('show')
+      }
+      else if(pElement.classList.contains('show')) {
+        pElement.classList.remove('show')
+        pElement.classList.add('hide')
+      }
+    });
+  }
+});

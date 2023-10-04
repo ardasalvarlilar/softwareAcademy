@@ -126,6 +126,5 @@ body #header section.container .col-md-6 p {
 
 .show {
   display: block;
-  height: 100px;
   transition: all 1s linear;
 }/*# sourceMappingURL=styles.css.map */
