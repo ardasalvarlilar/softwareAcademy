@@ -117,4 +117,15 @@ body #header section.container .col-md-6 p {
 #egitim-section {
   height: 500px;
   background: linear-gradient(16deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 127, 255) 94%, rgb(162, 209, 255) 100%);
+}
+
+.hide {
+  display: none;
+  transition: all 1s linear;
+}
+
+.show {
+  display: block;
+  height: 100px;
+  transition: all 1s linear;
 }/*# sourceMappingURL=styles.css.map */
