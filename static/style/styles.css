@@ -7,12 +7,12 @@ body {
 body #header {
   background: transparent;
 }
-body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+body #header nav .container-fluid .offcanvas-body ul.navbar-nav li.nav-item a.nav-link {
   color: white !important;
   text-transform: uppercase;
   position: relative;
 }
-body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item a.nav-link::before {
+body #header nav .container-fluid .offcanvas-body ul.navbar-nav li.nav-item a.nav-link::before {
   content: "";
   position: absolute;
   width: 0;
@@ -22,18 +22,18 @@ body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item a.n
   background-color: white;
   transition: width 0.3s ease;
 }
-body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item a.nav-link:hover::before {
+body #header nav .container-fluid .offcanvas-body ul.navbar-nav li.nav-item a.nav-link:hover::before {
   width: 100%;
 }
-body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu {
+body #header nav .container-fluid .offcanvas-body ul.navbar-nav li.nav-item ul.dropdown-menu {
   background-color: transparent;
 }
-body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item {
+body #header nav .container-fluid .offcanvas-body ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item {
   color: white !important;
   text-transform: uppercase;
   position: relative;
 }
-body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item::before {
+body #header nav .container-fluid .offcanvas-body ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item::before {
   content: "";
   position: absolute;
   width: 0;
@@ -43,10 +43,10 @@ body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item ul.
   background-color: white;
   transition: width 0.3s ease;
 }
-body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item:hover {
+body #header nav .container-fluid .offcanvas-body ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item:hover {
   background-color: transparent;
 }
-body #header nav .container-fluid .navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item:hover::before {
+body #header nav .container-fluid .offcanvas-body ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item:hover::before {
   width: 100%;
 }
 body #header div.container {
