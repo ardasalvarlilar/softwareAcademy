@@ -1,11 +1,11 @@
 body {
   min-height: 100vh;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(22deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 127, 255) 94%, rgb(162, 209, 255) 100%);
   background-repeat: no-repeat;
 }
 body #header {
   background: transparent;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(22deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 127, 255) 94%, rgb(162, 209, 255) 100%);
 }
 body #header nav .container-fluid .offcanvas-body ul.navbar-nav li.nav-item a.nav-link {
   color: white !important;
@@ -95,6 +95,10 @@ body #header div.container .icon-scroll:before {
     opacity: 0;
     transform: translateY(46px);
   }
+}
+body #header section.container {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(22deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 127, 255) 94%, rgb(162, 209, 255) 100%);
 }
 body #header section.container .col-md-6 div.padding-sag {
   padding-right: 50px;

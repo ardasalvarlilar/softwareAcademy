@@ -1,12 +1,12 @@
 
 body{
   min-height: 100vh;
-  background: rgb(0,0,0);
-  background: linear-gradient(22deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,127,255,1) 94%, rgba(162,209,255,1) 100%);
   background-repeat: no-repeat;
 
   #header{
     background: transparent;
+    background: rgb(0,0,0);
+    background: linear-gradient(22deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,127,255,1) 94%, rgba(162,209,255,1) 100%);
 
     nav{
 
@@ -126,9 +126,12 @@ body{
   }
 }
 
-    }
+  }
 
     section.container{
+      background: rgb(0,0,0);
+      background: linear-gradient(22deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,127,255,1) 94%, rgba(162,209,255,1) 100%);
+
 
       .col-md-6{
         div.padding-sag{
