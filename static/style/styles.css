@@ -112,4 +112,9 @@ body #header section.container .col-md-6 p {
   background: transparent;
   background: rgb(0, 0, 0);
   background: linear-gradient(146deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 127, 255) 94%, rgb(162, 209, 255) 100%);
+}
+
+#egitim-section {
+  height: 500px;
+  background: linear-gradient(16deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 127, 255) 94%, rgb(162, 209, 255) 100%);
 }/*# sourceMappingURL=styles.css.map */
