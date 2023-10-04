@@ -11,3 +11,6 @@ class Kadro(models.Model):
   full_name = models.CharField(max_length=100)
   image_url = models.ImageField(upload_to='persomal-picture')
   category = models.ManyToManyField(Category)
+
+  def __str__(self):
+    return f'{self.full_name}'
