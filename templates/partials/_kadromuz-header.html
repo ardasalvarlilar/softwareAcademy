@@ -1,0 +1,15 @@
+{% load static %}
+
+<header id='kadromuz'>
+  {% include "partials/_navbar.html" %}
+  {% if request.path == '/kadromuz/' %}
+  <div class="heading-div">
+    <h1 class="text-center text-white text-capitalize fw-bold mt-5 ">AKADEMİK KADROMUZ</h1>
+  </div>
+
+  <div class="position-relative mt-5">
+    <div class='icon-scroll '></div>
+  </div>
+  
+  {% endif %}
+</header>

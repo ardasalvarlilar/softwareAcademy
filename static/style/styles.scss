@@ -3,6 +3,11 @@ body{
   min-height: 100vh;
   background-repeat: no-repeat;
 
+  #kadromuz{
+    background: linear-gradient(22deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.7) 25%, rgba(0,127,255,.7) 94%, rgba(162,209,255,.4) 100%),url('../images/egitmen-bg.jpg');
+    height: 300px;
+
+  }
   #header{
     background: transparent;
     background: rgb(0,0,0);
@@ -172,4 +177,8 @@ body{
 .show {
   display: block;
   transition: all 1s linear;
+}
+
+#kadromuzContent{
+  background-color: #023047;
 }
