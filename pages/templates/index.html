@@ -1,0 +1,52 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block title %}
+<title>Anasayfa</title>
+{% endblock title %}
+
+{% block content %}
+<section id="service" class="container-fluid">
+  <div class="container text-white">
+
+    <div class="row p-4 rounded-4">
+      <div class="col-md-6 d-flex flex-column">
+        <div class='w-75'>
+          <img src="{% static 'images/resim1.png' %}" class='w-100' alt="">
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <ul class='list-unstyled d-flex flex-column gap-4 w-75'>
+          <li class='border-bottom p-1'>Lorem ipsum dolor sit.</li>
+          <li class='border-bottom p-1'>Sunt necessitatibus facilis provident?</li>
+          <li class='border-bottom p-1'>Illo amet recusandae rerum!</li>
+          <li class='border-bottom p-1'>Asperiores illo provident ea?</li>
+          <li class='border-bottom p-1'>Natus mollitia fuga porro?</li>
+          <li class='border-bottom p-1'>Ipsam expedita quas sunt.</li>
+          <li class='border-bottom p-1'>Velit quaerat reiciendis tempora.</li>
+          <li class='border-bottom p-1'>Et voluptate repudiandae facere!</li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <div class="row">
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <ul class="list-unstyled d-flex flex-column gap-4 w-75">
+          <li class="border-bottom p-1">Lorem, ipsum dolor.</li>
+          <li class="border-bottom p-1">Adipisci, repellat. Blanditiis!</li>
+          <li class="border-bottom p-1">Magni, commodi impedit?</li>
+          <li class="border-bottom p-1">Repellat, architecto enim.</li>
+          <li class="border-bottom p-1">Eum, vero aliquam?</li>
+          <li class="border-bottom p-1">Eum, vero aliquam?</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <img src="{% static "images/resim2.png" %}" class="w-100" alt="">
+      </div>
+    </div>
+</div>
+</section>
+{% endblock content %}
