@@ -4,6 +4,19 @@
   <div class="card-body">
     <h5 class="card-title">{{dersler.title}}</h5>
     <h5 class="card-title">{{dersler.city}}</h5>
+    <p class="card-text">
+      Days:
+      {% for day in dersler.days.all %}
+          {{ day.name }}
+          {% if not forloop.last %}, {% endif %}
+      {% endfor %}
+  </p>
+  <p class="card-text">
+    Time Slots:
+    {% for time_slot in dersler.time_slots.all %}
+        {{ time_slot.start_time }} - {{ time_slot.end_time }}
+        {% if not forloop.last %}, {% endif %}
+    {% endfor %}
     <p class="card-text">{{dersler.date}}</p>
     <p class="card-text">{{dersler.quota}}</p>
     <a href="#" class="btn btn-primary">Kayıt ol</a>
