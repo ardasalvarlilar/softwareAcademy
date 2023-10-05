@@ -1,0 +1,20 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}<title>Eğitimler</title>{% endblock title %}
+
+{% block content %}
+{% include "partials/_navbar.html" %}
+
+<main>
+<div class="row">
+
+    {% for dersler in ders %}
+    <div class="col-md-4 col-sm-6">
+      {% include "partials/_dersler.html" %}
+    </div>
+    {% endfor %}
+</div>
+</main>
+
+{% endblock content %}

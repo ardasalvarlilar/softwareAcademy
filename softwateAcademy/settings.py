@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'ders',
     'kadro',
     'pages',
     'django.contrib.admin',

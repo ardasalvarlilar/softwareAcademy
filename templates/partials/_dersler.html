@@ -1,0 +1,11 @@
+{% load static %}
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'images/javascript.png' %}" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{dersler.title}}</h5>
+    <h5 class="card-title">{{dersler.city}}</h5>
+    <p class="card-text">{{dersler.date}}</p>
+    <p class="card-text">{{dersler.quota}}</p>
+    <a href="#" class="btn btn-primary">Kayıt ol</a>
+  </div>
+</div>

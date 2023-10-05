@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from kadro.models import *
 from .models import *
+from ders.models import *
 # Create your views here.
 
 def index(request):
@@ -21,4 +22,10 @@ def kadromuz(request):
   personel = Kadro.objects.all()
   return render(request, 'kadromuz.html',{
     'personel': personel
+  })
+
+def egitim(request):
+  ders = EduProgram.objects.all()
+  return render(request, 'egitimler.html',{
+     'ders': ders
   })
