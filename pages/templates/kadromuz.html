@@ -18,6 +18,16 @@
 </div>
 
 <section id='kadro'>
+  <div class="container">
+    
+    <div class="row">
 
+      {% for calisan in personel %}
+      <div class="col-lg-4 col-sm-6">
+        {% include "partials/_personel.html" %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 {% endblock content %}

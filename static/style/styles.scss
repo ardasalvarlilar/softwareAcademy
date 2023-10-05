@@ -1,17 +1,20 @@
-
+$first-linear-gradient-color: rgba(0,0,0,.7);
+$second-linear-gradient-color: rgb(80, 51, 103,.7);
+$first-linear-gradient-index-color: rgba(0,0,0,1);
+$second-linear-gradient-index-color: rgb(80, 51, 103,1);
+$third-linear-gradient-index-color: rgb(255, 121, 0,.4);
 body{
   min-height: 100vh;
   background-repeat: no-repeat;
 
   #kadromuz{
-    background: linear-gradient(22deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.7) 25%, rgba(0,127,255,.7) 94%, rgba(162,209,255,.4) 100%),url('../images/egitmen-bg.jpg');
+    background: linear-gradient(22deg, $first-linear-gradient-color 0%, $first-linear-gradient-color 25%, $second-linear-gradient-color 94%, rgba(162,209,255,.4) 100%),url('../images/egitmen-bg.jpg');
     height: 300px;
 
   }
   #header{
     background: transparent;
-    background: rgb(0,0,0);
-    background: linear-gradient(22deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,127,255,1) 94%, rgba(162,209,255,1) 100%);
+    background: linear-gradient(22deg, $first-linear-gradient-index-color 0%, $first-linear-gradient-index-color 25%, $second-linear-gradient-index-color 85%, $third-linear-gradient-index-color 100%);
 
     nav{
 
@@ -160,23 +163,29 @@ body{
 #service {
   background: transparent;
   background: rgb(0,0,0);
-  background: linear-gradient(146deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,127,255,1) 94%, rgba(162,209,255,1) 100%);
+  background: linear-gradient(146deg, $first-linear-gradient-index-color 0%, $first-linear-gradient-index-color 25%, $second-linear-gradient-index-color 85%, $third-linear-gradient-index-color 100%);
 
 
 }
 
 #egitim-section{
   height: 500px;
-  background: linear-gradient(16deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,127,255,1) 94%, rgba(162,209,255,1) 100%);
+  background: linear-gradient(16deg, $first-linear-gradient-index-color 0%, $first-linear-gradient-index-color 25%, $second-linear-gradient-index-color 85%, $third-linear-gradient-index-color 100%);
 }
 
 .hide {
-  display: none;
-  transition: all 1s linear;
+  visibility: hidden;
+  height: 0px;
+  transition: all .2s linear;
 }
 .show {
-  display: block;
-  transition: all 1s linear;
+  height: 50px;
+  visibility: visible;
+  transition: all .2s linear;
+}
+
+.transition{
+  transition: all .2s linear;
 }
 
 #kadromuzContent{
