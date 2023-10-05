@@ -8,7 +8,7 @@ class City(models.Model):
   
 class Day(models.Model):
     name = models.CharField(max_length=50, choices=(
-        ('Pazartesi, Salı, Perşembe Cuma', 'PazartesiPazartesi, Salı, Perşembe Cuma'),
+        ('Pazartesi, Salı, Perşembe Cuma', 'Pazartesi, Salı, Perşembe Cuma'),
         ('Cumartesi, Pazar', 'Cumartesi Pazar')
 
     ))
